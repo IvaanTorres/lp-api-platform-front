@@ -1,6 +1,7 @@
 // Genral imports
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
+import Input from '../Input/Input';
 
 // Style imports
 import './LoginForm.css';
@@ -44,9 +45,26 @@ const LoginForm = ({handleSubmit}) => {
 
                 <div className='credentials-and-password-container'>
 
+                    <Input 
+                        label={'Email'} 
+                        type="text" 
+                        required={true} 
+                        placeholder="Email" 
+                        value={credentials.login} 
+                        handleChange={handleLoginChange}
+                    />
+                    <Input 
+                        label={'Password'} 
+                        type="password" 
+                        required={true} 
+                        placeholder="Password" 
+                        value={credentials.password} 
+                        handleChange={handlePasswordChange}
+                    />
                     <button
                         className='login-page-call-to-action'
                         type="submit"
+                        onClick={handleSubmitForm}
                     >
                         Submit
                     </button>
