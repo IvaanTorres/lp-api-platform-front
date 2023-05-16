@@ -35,7 +35,6 @@ const LoginPage = () => {
             <LoginForm
                 handleSubmit={handleSubmit}
             />
-
         </div>
     )
 }

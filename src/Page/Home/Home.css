@@ -1,0 +1,25 @@
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  row-gap: 40px;
+  padding: 50px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 0px 10px 20px 10px;
+}
+
+.button-primary {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
